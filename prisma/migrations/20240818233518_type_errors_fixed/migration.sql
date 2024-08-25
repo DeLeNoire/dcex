@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "solWallet" ALTER COLUMN "publicKey" SET DATA TYPE TEXT,
+ALTER COLUMN "privateKey" SET DATA TYPE TEXT;
