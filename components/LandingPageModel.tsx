@@ -7,8 +7,9 @@ import * as THREE from 'three'
 // Extend PlaneGeometry for use in JSX
 extend({ PlaneGeometry: THREE.PlaneGeometry })
 
+
 const LandingPageModel = () => {
-  const { scene } = useGLTF("/bag.glb")
+  const { scene } = useGLTF('/bag.glb')
   const modelRef = useRef()
   const clock = useRef(new THREE.Clock())
 
@@ -22,7 +23,7 @@ const LandingPageModel = () => {
     >
         
       {/* Preload the model */}
-      <Preload all />
+      {/* <Preload all /> */}
       <ambientLight intensity={1} 
       />
 

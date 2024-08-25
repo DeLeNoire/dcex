@@ -1,8 +1,11 @@
 "use client"
 import React, { useEffect } from 'react'
-import LandingPageModel from './LandingPageModel'
 import { useSession } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
+
+import dynamic from 'next/dynamic';
+
+const LandingPageModelNew = dynamic(() => import('./LandingPageModel'), { ssr: false });
 
 const Hero = () => {
     const { data: session } = useSession()
@@ -31,7 +34,7 @@ const Hero = () => {
                         Convert Currencies to Crypto in Clicks
                     </div>
 
-                    <LandingPageModel />
+                    <LandingPageModelNew />
                 </>
             }
         </div>
