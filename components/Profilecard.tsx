@@ -39,7 +39,7 @@ const ProfileCard = ({publicKey}:{publicKey : string}) => {
   //console.log(session.data?.user)
   return (
     <div className='flex flex-col justify-center items-center w-full h-full'>
-      <div className=" top-0 left-0 max-w-3xl w-full h-[19rem] bg-orange-100/15 rounded-2xl z-10 border ">
+      <div className=" top-0 left-0 max-w-3xl w-full h-[20rem] bg-orange-100/15 rounded-2xl z-10 border ">
         <div className="relative pl-12">
         <Component
           image={session.data?.user?.image ?? ""}
